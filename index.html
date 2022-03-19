@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- ______________________css files_______________________________ -->
+    <link rel="stylesheet" href="css_files/normalize.css">
+    <link rel="stylesheet" href="css_files/all.min.css">
+    <link rel="stylesheet" href="css_files/fontawesome.css">
+    <link rel="stylesheet" href="css_files/roboto.css">
+    <link rel="stylesheet" href="css_files/bootstrap.css">
+    <link rel="stylesheet" href="css_files/my_frame.css">
+    <link rel="stylesheet" href="css_files/style.css">
+    
+
+
+
+
+
+
+    <title>coffee_shop</title>
+
+</head>
+
+<body>
+    <!-- __________________________________ nav section __________________________ -->
+  
+    <nav>
+      <div class="container-fluid d-flex align-items-center flex-nowrap justify-content-between" >
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo.png" >
+        </a>
+
+
+
+        <ul class="nav12"id="bara"  >
+          <li class="nav-item1">
+            <a class=" nav-link1" href="#">Home </a>
+          </li>
+          <li class="nav-item1">
+            <a class=" nav-link1" href="#">About</a>
+          </li>
+          <li class="nav-item1">
+            <a class=" nav-link1" href="#">Menu </a>
+          </li>
+          <li class="nav-item1">
+            <a class=" nav-link1" href="#">Products</a>
+          </li>
+          <li class="nav-item1">
+            <a class=" nav-link1" href="#">Review</a>
+          </li>
+          <li class="nav-item1">
+            <a class=" nav-link1" href="#">Contact</a>
+          </li>
+          <li class="nav-item1">
+            <a class=" nav-link1" href="#">Blogs</a>
+          </li>
+        </ul>
+
+      <ul class="nav1 flex-nowrap " style="padding: 0px; margin: 0px 20px;height: 100%;">
+        <li class="nav-item2">
+          <div class="dropdown">
+            <button type="button" class= "nav-link2" id="x" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <div class="dropdown-menu ddm1" aria-labelledby="x">
+              <form >
+                <input type="search" placeholder="search">
+                <label for=""><i class="fa-solid fa-magnifying-glass"></i></label>
+              </form>
+
+            </div>
+          </div>
+        </li>
+       
+
+     
+          <li class="nav-item2">
+            <a class=" nav-link2" href="#"> <i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
+
+         
+       
+
+      
+            <li class="nav-item2">
+              <a class=" nav-link2" href="#" id="barao"><i class="fa-solid fa-bars" onclick="openmenu()" ></i> </a>
+              <a class=" nav-link2" href="#" id="barac" style="position: relative;left: -50%;"><i class="fa-solid fa-bars" onclick="closemenu()" ></i> </a>
+            </li>
+      </ul> 
+
+      </div>
+
+    </nav>
+
+
+
+
+
+    <!-- ________________ home section _____________________________ -->
+
+    <section class="home" aria-roledescription="home">
+      <div class="container-fluid row align-items-center" style="min-height: 100vh;">
+        <div class="card col-md-6 col-lg-4 col-sm-12" style="background-color: transparent;" >
+          <div class="card-body " style="background-color: transparent;margin: 0vh 0vw 0vh 7vw;">
+            <h5 class="card-title">FRESH COFFEE IN THE MORNING</h5>
+            <p class="card-text">Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Placeat Labore, Sint Cupiditate Distinctio Tempora Reiciendis.</p>
+            <a href="#" class="btn at ">Get Yours Now</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <!-- __________________________ body section _________________________________ -->
+
+
+    <section class="bod" style="padding-bottom: 20px;">
+
+
+
+
+     <!-- ______________________________________________ about us section _______________________________________ -->
+      
+        <div class="about-us text-align-center  container-fluid" style="padding: 10px 0px;">     
+          <h1 class="heading"><span style="color: var(--main-color);">ABOUT </span>US</h1>
+          <div class="card mb-3  container-fluid"  style="background-color: transparent;border: 0px;">
+            <div class="row justify-content-center no-gutters " style="min-height: 50vh;" >
+              <div class="col-md-12 col-lg-5">
+                <img src="./images/about-img.jpeg" class="card-img" style="border-radius: 0px;height: 100%;">
+              </div>
+              <div class="col-md-12 col-lg-5  ">
+                <div class="card-body " style="height: 100%;">
+                  <h5 class="card-title">What Makes Our Coffee Special?</h5>
+                  <p class="card-text">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Voluptatibus Qui Ea Ullam, Enim Tempora Ipsum Fuga Alias 
+                    Quae Ratione A Officiis Id Temporibus Autem? Quod Nemo Facilis Cupiditate. Ex, Vel?
+                  </p>
+                  
+                  <p class="card-text">
+                    Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Odit Amet Enim Quod Veritatis, Nihil Voluptas Culpa! Neque Consectetur Obcaecati Sapiente?
+                  </p>
+                  <a href="#" class="btn at ">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+  
+      </div>
+
+
+
+    
+      
+
+    <!-- ____________________________________________ menu section ________________________________________________ -->
+      <div class="menu container-fluid  ">
+        <h1 class="heading">OUR&nbsp;<span style="color: var(--main-color);">MENU </span></h1>
+
+        <div class="grida  " >
+
+        <div class="card " style="margin: 4px 2px;background-color: transparent;">
+          <div class="card-body">
+            <img src="./images/menu-1.png"  style="border-radius: 50%;height: 30%; width: 30%;">
+            <h5>Tasty And Healthy</h5>
+            <h5>&#36;15.99 &nbsp;<span>20.99</span></h5>
+            <a href="#" class="btn at ">Add To Cart</a>
+
+            
+
+          </div>
+        </div>
+
+
+        <div class="card " style="margin: 4px 2px;background-color: transparent;">
+          <div class="card-body">
+            <img src="./images/menu-2.png"  style="border-radius: 50%;height: 30%; width: 30%;">
+            <h5>Tasty And Healthy</h5>
+            <h5>&#36;15.99 &nbsp;<span>20.99</span></h5>
+            <a href="#" class="btn at ">Add To Cart</a>
+
+            
+
+          </div>
+        </div>
+
+        <div class="card " style="margin: 4px 2px;background-color: transparent;">
+          <div class="card-body">
+            <img src="./images/menu-3.png"  style="border-radius: 50%;height: 30%; width: 30%;">
+            <h5>Tasty And Healthy</h5>
+            <h5>&#36;15.99 &nbsp;<span>20.99</span></h5>
+            <a href="#" class="btn at ">Add To Cart</a>
+
+            
+
+          </div>
+        </div>
+
+        <div class="card " style="margin: 4px 2px;background-color: transparent;">
+          <div class="card-body">
+            <img src="./images/menu-4.png"  style="border-radius: 50%;height: 30%; width: 30%;">
+            <h5>Tasty And Healthy</h5>
+            <h5>&#36;15.99 &nbsp;<span>20.99</span></h5>
+            <a href="#" class="btn at ">Add To Cart</a>
+
+            
+
+          </div>
+        </div>
+
+        <div class="card " style="margin: 4px 2px;background-color: transparent;">
+          <div class="card-body">
+            <img src="./images/menu-5.png"  style="border-radius: 50%;height: 30%; width: 30%;">
+            <h5>Tasty And Healthy</h5>
+            <h5>&#36;15.99 &nbsp;<span>20.99</span></h5>
+            <a href="#" class="btn at ">Add To Cart</a>
+
+            
+
+          </div>
+        </div>
+
+        <div class="card " style="margin: 4px 2px;background-color: transparent;">
+          <div class="card-body">
+            <img src="./images/menu-6.png"  style="border-radius: 50%;height: 30%; width: 30%;">
+            <h5>Tasty And Healthy</h5>
+            <h5>&#36;15.99 &nbsp;<span>20.99</span></h5>
+            <a href="#" class="btn at ">Add To Cart</a>
+
+            
+
+          </div>
+        </div>
+
+        </div>
+
+      </div>
+
+
+
+    <!-- _____________________ products _____________________________________ -->
+
+
+
+    <div class="products container-fluid">
+      <h1 class="heading">OUR&nbsp;<span style="color: var(--main-color);">PRODUCTS </span></h1>
+
+
+      <div class="row justify-content-center align-items-center">
+
+        <div class="card col-lg-3 col-sm-5 col-12" style="margin: 4px 2px;background-color: transparent;">
+          <div class="card-body">
+            <div class="links">
+              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="#"><i class="fa-solid fa-heart"></i></a>
+              <a href="#"><i class="fa-solid fa-eye"></i></a>
+            </div>
+            <img src="./images/product-1.png"  style="display: block; height: 60%; width: 43%; margin: 2vh 0vh;">
+            <h5>Fresh Coffee</h5>
+            <div class="stars" style="color: var(--main-color);">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <h5>&#36;15.99 &nbsp;<span>20.99</span></h5>
+          
+
+            
+
+          </div>
+        </div>
+
+        <div class="card col-lg-3 col-sm-5 col-12" style="margin: 4px 2px;background-color: transparent;">
+          <div class="card-body">
+            <div class="links">
+              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="#"><i class="fa-solid fa-heart"></i></a>
+              <a href="#"><i class="fa-solid fa-eye"></i></a>
+            </div>
+            <img src="./images/product-2.png"  style="display: block; height: 60%; width: 43%; margin: 2vh 0vh;">
+            <h5>Fresh Coffee</h5>
+            <div class="stars" style="color: var(--main-color);">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <h5>&#36;15.99 &nbsp;<span>20.99</span></h5>
+          
+
+            
+
+          </div>
+        </div>
+
+
+
+        <div class="card col-lg-3 col-sm-5 col-12" style="margin: 4px 2px;background-color: transparent;">
+          <div class="card-body">
+            <div class="links">
+              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="#"><i class="fa-solid fa-heart"></i></a>
+              <a href="#"><i class="fa-solid fa-eye"></i></a>
+            </div>
+            <img src="./images/product-3.png"  style="display: block; height: 60%; width: 43%; margin: 2vh 0vh;">
+            <h5>Fresh Coffee</h5>
+            <div class="stars" style="color: var(--main-color);">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <h5>&#36;15.99 &nbsp;<span>20.99</span></h5>
+          
+
+            
+
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+
+
+    <!-- _________________________________________customer's review_________________________________ -->
+
+    <div class="review container-fluid">
+      <h1 class="heading">CUSTOMER'S&nbsp;<span style="color: var(--main-color);">REVIEW </span></h1>
+
+
+      <div class="row justify-content-center align-items-center">
+
+        <div class="card col-lg-3 col-sm-5 col-12" style="margin: 4px 2px;background-color: transparent;">
+          <div class="card-body">
+
+
+            <img src="./images/quote-img.png" style="margin: 10px 0px; max-width: 50px; max-height: 50px;" >
+
+
+
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Animi Nulla Sit Libero Nemo Fuga Sequi Nobis? Necessitatibus Aut Laborum, Nisi Quas Eaque Laudantium Consequuntur 
+              Iste Ex Aliquam Minus Vel? Nemo.</p>
+
+            <img src="./images/pic-1.png"  style=" height: 80px; width: 80px; border-radius: 50%; margin: 2vh 0vh;">
+            <h5>John Deo</h5>
+            <div class="stars" style="color: var(--main-color);">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            
+          
+
+            
+
+          </div>
+        </div>
+
+        
+        <div class="card col-lg-3 col-sm-5 col-12" style="margin: 4px 2px;background-color: transparent;">
+          <div class="card-body">
+
+
+            <img src="./images/quote-img.png" style="margin: 10px 0px; max-width: 50px; max-height: 50px;" >
+
+
+
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Animi Nulla Sit Libero Nemo Fuga Sequi Nobis? Necessitatibus Aut Laborum, Nisi Quas Eaque Laudantium Consequuntur 
+              Iste Ex Aliquam Minus Vel? Nemo.</p>
+
+            <img src="./images/pic-1.png"  style=" height: 80px; width: 80px; border-radius: 50%; margin: 2vh 0vh;">
+            <h5>John Deo</h5>
+            <div class="stars" style="color: var(--main-color);">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            
+          
+
+            
+
+          </div>
+        </div>
+
+
+        
+        <div class="card col-lg-3 col-sm-5 col-12" style="margin: 4px 2px;background-color: transparent;">
+          <div class="card-body">
+
+
+            <img src="./images/quote-img.png" style="margin: 10px 0px; max-width: 50px; max-height: 50px;" >
+
+
+
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Animi Nulla Sit Libero Nemo Fuga Sequi Nobis? Necessitatibus Aut Laborum, Nisi Quas Eaque Laudantium Consequuntur 
+              Iste Ex Aliquam Minus Vel? Nemo.</p>
+
+            <img src="./images/pic-1.png"  style=" height: 80px; width: 80px; border-radius: 50%; margin: 2vh 0vh;">
+            <h5>John Deo</h5>
+            <div class="stars" style="color: var(--main-color);">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            
+          
+
+            
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!-- _____________________________ contact us _____________________________________________ -->
+
+
+    <div class="about-us text-align-center  container-fluid" style="padding: 10px 0px;">     
+      <h1 class="heading"><span style="color: var(--main-color);">CONTACT </span>US</h1>
+      <div class="card mb-3  container-fluid"  style="background-color: transparent;border: 0px;">
+        <div class="row justify-content-center no-gutters " style="min-height: 50vh;" >
+          <div class="col-md-12 col-lg-5">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30153.788252261566!2d72.82321484
+            621745!3d19.141690214227783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20M
+            aharashtra%20400047!5e0!3m2!1sen!2sin!4v1629452077891!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="col-md-12 col-lg-5  ">
+            <div class="card-body " style="height: 100%;">
+              <h1 class="heading">GET IN TOUCH</h1>
+              <form class="w-100" >
+                <div class="input-group flex-nowrap">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-user"></i></span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="name" aria-label="Username" aria-describedby="addon-wrapping">
+                </div>
+                <div class="input-group flex-nowrap">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-envelope"></i></span>
+                  </div>
+                  <input type="email" class="form-control" placeholder="email" aria-label="useremai" aria-describedby="addon-wrapping">
+                </div>
+                <div class="input-group flex-nowrap">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-phone"></i></span>
+                  </div>
+                  <input type="number" class="form-control" placeholder="number" aria-label="Usernumber" aria-describedby="addon-wrapping">
+                </div>
+
+                <input class="btn at mt-4" type="submit" value="Contact Now"></input>
+              </form>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+  </div>
+
+
+    <!-- _______________________________ blogs ________________________________________
+ -->
+
+
+
+ <div class="blog container-fluid">
+
+  <h1 class="heading">OUR&nbsp;<span style="color: var(--main-color);">BLOGS </span></h1>
+
+  <div class="row justify-content-center align-items-center">
+
+  <div class="card col-lg-3 col-sm-5 col-12" style="margin: 4px 5px;background-color: transparent;overflow: hidden;">
+    <img src="./images/blog-1.jpeg" class="card-img-top w-100" style="height: 50%; border-radius: 0px ;" >
+    <div class="card-body">
+      
+      <h5 class="card-title">Tasty And Refering Coffee</h5>
+      <h5 class="card-title" style="color: var(--main-color);">By Admin / 21st May, 2021</h5>
+      <p class="card-text">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Non, Dicta.</p>
+      <a href="#" class="btn at ">Read More</a>
+    </div>
+  </div>
+
+  <div class="card col-lg-3 col-sm-5 col-12" style="margin: 4px 5px;background-color: transparent;overflow: hidden;">
+    <img src="./images/blog-2.jpeg" class="card-img-top w-100" style="height: 50%; border-radius: 0px ;" >
+    <div class="card-body">
+      
+      <h5 class="card-title">Tasty And Refering Coffee</h5>
+      <h5 class="card-title" style="color: var(--main-color);">By Admin / 21st May, 2021</h5>
+      <p class="card-text">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Non, Dicta.</p>
+      <a href="#" class="btn at ">Read More</a>
+    </div>
+  </div>
+
+
+  <div class="card col-lg-3 col-sm-5 col-12" style="margin: 4px 5px;background-color: transparent;overflow: hidden;">
+    <img src="./images/blog-3.jpeg" class="card-img-top w-100" style="height: 50%; border-radius: 0px ;" >
+    <div class="card-body">
+      
+      <h5 class="card-title">Tasty And Refering Coffee</h5>
+      <h5 class="card-title" style="color: var(--main-color);">By Admin / 21st May, 2021</h5>
+      <p class="card-text">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Non, Dicta.</p>
+      <a href="#" class="btn at ">Read More</a>
+    </div>
+  </div>
+
+
+
+
+
+
+  </div>
+
+</div>
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- _________________________________ footer ____________________________________________ -->
+    <footer class=" text-center text-white" style="background-color: var(--black);">
+      <!-- Grid container -->
+      <div class="container ">
+        <!-- Section: Social media -->
+        <section class="mb-4 ">
+          <!-- Facebook -->
+          <a class="btn  " href="#" role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+    
+          <!-- Twitter -->
+          <a class="btn  " href="#" role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+  
+    
+          <!-- Instagram -->
+          <a class="btn  " href="#" role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+    
+          <!-- Linkedin -->
+          <a class="btn  " href="#" role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+    
+          <!-- Github -->
+          <a class="btn  " href="#" role="button"
+            ><i class="fab fa-pinterest"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+
+
+            <!-- links -->
+            <div class="container con2 ">
+
+              <section class="mb-4">
+
+                <a class="btn  " href="#" role="button">Home</a>
+
+                <a class="btn  " href="#" role="button">About</a>
+
+                <a class="btn  " href="#" role="button">Menu </a>
+
+                <a class="btn  " href="#" role="button">Products</a>
+
+                <a class="btn  " href="#" role="button">Review</a>
+
+                <a class="btn  " href="#" role="button">Contact</a>
+
+                <a class="btn  " href="#" role="button">Blogs</a>
+
+          
+
+     
+              </section>
+
+            </div>
+  
+    
+
+      <div class="text-center p-3" >
+        <p>Created By <span style="color: var(--main-color);">Mahmoud Aldaya </span>| All Rights Reserved</p>
+     
+      </div>
+     
+    </footer>
+
+
+
+
+
+    <!-- _______________ script files______________________ -->
+
+
+
+    <script>
+            var baraa=document.getElementById("bara")
+            var baraac=document.getElementById("barac")
+            var baraao=document.getElementById("barao")
+
+            function closemenu(){
+                baraa.style.right="-60vw";
+                baraac.style.visibility="hidden";
+                baraao.style.visibility="visible";
+            }
+
+            function openmenu(){
+                baraa.style.right="0vw"
+                baraac.style.visibility="visible";
+                baraao.style.visibility="hidden";
+            }
+
+
+
+    </script>
+    <script src="js/popper.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+
+
+</body>
+
+</html>

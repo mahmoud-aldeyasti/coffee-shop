@@ -1,0 +1,551 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all 0.3s linear;
+    
+
+}
+
+body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+:root {
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --border: .1rem solid rgba(255,255,255,.3);
+}
+
+
+a{
+    cursor: pointer;
+}
+
+ .at{
+    background-color: var(--main-color);
+    color: white;
+    padding: 5px 30px;
+    font-size: 1.2rem;
+    
+}
+ .at:hover{
+        letter-spacing: 0.15rem;
+        color: white;
+       
+}
+.heading{
+    color: white;
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+
+}
+
+
+
+/* _________________ nav bar ________________________________ */
+nav{
+    background-color: var(--bg);
+    position: fixed;
+    border-bottom: var(--border) ;
+    z-index: 1000000;
+    width: 100vw;
+    position: relative;
+    
+
+   
+}
+
+nav .nav12{
+    
+    text-align: center;
+    list-style: none;
+  
+}
+
+nav .nav1{
+    display:inline-block;
+    text-align: center;
+    list-style: none;
+    color: white;
+    
+   
+    
+}
+
+nav .nav-item1 , nav .nav-item2{
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+
+nav .nav-item1 .nav-link1 {
+    color: white;
+    font-size: 1.1rem;
+    padding-bottom: 1px;
+    border-bottom: 0px solid ;
+    text-decoration: none;
+    display: inline-block;
+
+
+
+}
+nav .nav-item1 .nav-link1:hover{
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+    padding-bottom:4px ;
+    
+ }
+nav .nav-item2 .nav-link2{
+    font-size: 2rem;
+    background-color: transparent;
+    box-shadow: none;
+    text-decoration: none;
+    color: white;
+    border: 0px;
+    outline: 0px;
+    cursor: pointer;
+    
+
+}
+
+.ddm1{
+   
+    padding: 0px;
+    width: 25vw;
+
+}
+.ddm1 .fa-solid{
+    color: black;
+}
+.ddm1 form{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+   
+   
+}
+
+.ddm1 form input{
+    border: none;
+    outline: none;
+    flex-basis: 90%;
+
+    display: inline-block;
+
+}
+
+#barao{
+    visibility: hidden;
+}
+
+
+#barac{
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* __________________________ background section ____________________________ */
+
+
+
+.home{
+    background-image: url(../images/home-img.jpeg);
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+
+.home .card , .card-body {
+    border: 0px;
+    color: white;
+}
+
+
+.home .card-body h5{
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 14px 0px;
+
+}
+
+@media(max-width:400px){
+    .home .card-body h5{
+        font-size: 2.2rem;
+
+    }
+
+}
+
+.home .card-body p{
+    font-weight: 200;
+    line-height: 1.8;  
+    margin: 20px 0px;
+}
+
+
+
+/* ______________________ body section _______________________ */
+
+
+
+/* ____________________ about-us ______________________________________ */
+
+.bod{
+    background-color: var(--bg);
+
+}
+
+.about-us .card-body{
+    background-color: var(--black);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.about-us .card-body p{
+    font-weight: 200;
+    line-height: 1.4;  
+    margin: 10px 0px;
+}
+
+
+
+
+/* ______________________________ menu ______________________________ */
+
+
+
+.menu .grida{
+    display: grid;
+    grid-template-columns: repeat( auto-fit , minmax( 18rem , 1fr) );
+    justify-content: center;
+    align-items: center;
+  
+    
+}
+@media(min-width:1000px){
+
+    .menu .grida{
+        margin-right: 145px;
+        margin-left: 145px;
+    }
+}
+
+
+
+
+.menu .card-body  , .products .card-body , .review .card-body , .blog .card-body {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    min-height: 30vh;
+}
+
+.menu .card-body  , .products .card-body , .review .card-body {
+    border: var(--border);
+}
+.menu .card-body:hover{
+    background-color: white;
+    color: black;
+
+}
+.menu .card-body:hover a{
+    color: black;
+}
+
+.menu .card-body h5 , .products .card-body h5 , .review .card-body h5{
+    margin: 10px 0px;
+    font-size: 1.3rem;
+}
+
+.menu .card-body h5 span ,.products .card-body h5 span {
+   opacity: 0.7;
+    font-size: 1.05rem;
+    text-decoration: line-through;
+
+}
+
+
+
+
+/* _________________________________ products __________________________________ */
+
+.products .card-body{
+    min-height: 50vh;
+}
+
+
+.products .stars , .review .stars{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 2px 0px;
+}
+
+.products .stars .fa-solid , .review .stars .fa-solid{
+    margin: 0px 2px;
+}
+.products .links{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 2px 0px;
+}
+
+.products .links .fa-solid{
+    color: white;
+    padding: 0px 2px;
+    font-size: 1.5rem;
+}
+.products .links a{
+    color: white;
+    background-color: transparent;
+    border: var(--border);
+    padding: 6px 12px;
+    margin: 0px 4px;
+}
+
+.products .links a:hover{
+
+    background-color: var(--main-color);
+  
+}
+
+
+
+/* _________________________ review ______________________________ */
+.review .card-body , .blog .card{
+    min-height: 45vh;
+}
+
+.review .card-body p , .blog .card-body p{
+    margin: 12px 0px;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+
+/* ___________________________________ contact us _______________________________________ */
+
+.about-us .card-body form .input-group{
+    background-color: var(--bg);
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px;
+    border: var(--border);
+}
+
+.about-us .card-body form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.about-us .card-body form .input-group .input-group-prepend ,.about-us .card-body form .input-group .input-group-prepend .input-group-text , .about-us .card-body form .input-group input
+ {
+    background-color: var(--bg);
+}
+
+.about-us .card-body form .input-group .input-group-prepend .input-group-text {
+    border:0px;
+
+}
+.about-us .card-body form .input-group .input-group-prepend .input-group-text .fa-solid {
+    color: white;
+    font-size: 1.5rem;
+
+}
+
+.about-us .card-body form .input-group input{
+
+    border:0px;
+    
+}
+.about-us .card-body form .input-group input:focus{
+    
+    box-shadow: none;
+    border:0px;
+    
+}
+
+
+.map{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+/* ______________________ blog _________________________ */
+
+.blog .card{
+    border: var(--border);
+    border-radius: 0px;
+    padding: 0px;
+}
+
+
+.blog .card img:hover{
+    transform: scale(1.25);
+}
+
+
+
+
+/* ________________________ footer ________________________________ */
+footer{
+    margin: 0px;
+    padding: 20px;
+}
+
+footer .container .btn {
+    border: var(--border);
+    color: white;
+    margin: 5px 8px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+footer .container .mb-4{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items:center ;
+}
+footer .container .btn:hover {
+ background-color: var(--main-color);
+ box-shadow: none;
+    
+
+}
+
+
+footer .text-center p {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    word-spacing: 3px;
+    font-weight: 200;
+
+}
+
+
+footer .con2 .btn{
+    margin: 5px 8px;
+    width: fit-content;
+    height: fit-content;
+    padding: 4px 15px;
+    border-radius: 0px;
+    font-size: 1.3rem;
+}
+
+/* ____________________ media quries ___________________________ */
+
+@media(max-width:600px){
+    .heading{
+        font-size: 2.2rem;
+
+    }
+
+    :root{
+        font-size: 10px;
+    }
+
+
+
+ 
+
+
+
+
+}
+
+@media(max-width:1000px){
+    .heading{
+        font-size: 2.6rem;
+
+    }
+    :root{
+        font-size: 13px;
+    }
+
+    .ddm1{
+        width: 80vw;
+    }
+    .nav12{
+        position: fixed;
+        z-index: 100;
+        width: 60vw;
+        top: 12vh;
+        right: -60vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+        color: black;
+        border: 0px;
+        
+        
+    }
+
+
+
+    #barao{
+        visibility: visible;
+    }
+    
+    
+    #barac{
+        visibility: hidden;
+    }
+    
+    
+
+
+    .nav12 .nav-item1 .nav-link1{
+        color: black;
+        padding: 1vh;
+        font-size: 2rem;
+
+    }
+ 
+
+    
+    
+
+
+}
