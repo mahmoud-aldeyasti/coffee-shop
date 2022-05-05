@@ -150,9 +150,7 @@ nav .nav-item2 .nav-link2{
 }
 
 
-#barac{
-    visibility: hidden;
-}
+
 
 
 
@@ -521,6 +519,10 @@ footer .con2 .btn{
         
         
     }
+    .active{
+        right: 0vw;
+
+    }
 
 
 
@@ -529,9 +531,7 @@ footer .con2 .btn{
     }
     
     
-    #barac{
-        visibility: hidden;
-    }
+    
     
     
 

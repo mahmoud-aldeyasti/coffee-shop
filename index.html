@@ -87,8 +87,8 @@
 
       
             <li class="nav-item2">
-              <a class=" nav-link2" href="#" id="barao"><i class="fa-solid fa-bars" onclick="openmenu()" ></i> </a>
-              <a class=" nav-link2" href="#" id="barac" style="position: relative;left: -50%;"><i class="fa-solid fa-bars" onclick="closemenu()" ></i> </a>
+              <a class=" nav-link2" href="#" id="barao"><i class="fa-solid fa-bars"  ></i> </a>
+            
             </li>
       </ul> 
 
@@ -638,21 +638,18 @@
 
 
     <script>
-            var baraa=document.getElementById("bara")
-            var baraac=document.getElementById("barac")
-            var baraao=document.getElementById("barao")
+            let baraa=document.getElementById("bara");
+            let barao = document.getElementById("barao");
+            barao.onclick = function (){
+              baraa.classList.toggle("active");
+            } 
 
-            function closemenu(){
-                baraa.style.right="-60vw";
-                baraac.style.visibility="hidden";
-                baraao.style.visibility="visible";
-            }
 
-            function openmenu(){
-                baraa.style.right="0vw"
-                baraac.style.visibility="visible";
-                baraao.style.visibility="hidden";
-            }
+          
+
+
+
+          
 
 
 
